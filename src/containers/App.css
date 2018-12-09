@@ -36,3 +36,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+#root, #root > main, #root > main > div {
+    height: 100%;
+}
