@@ -4,9 +4,14 @@ import './App.css';
 
 class App extends Component {
 
+    componentDidMount() {
+        this.renderMap();
+    }
+
     renderMap = () => {
         loadScript("https://maps.googleapis.com/maps/api/js?key=" +
-            "AIzaSyAAHhlH1VNV94TBEO4wLnaJvNaw5r6W9sk&callback=initMap")
+            "AIzaSyAAHhlH1VNV94TBEO4wLnaJvNaw5r6W9sk&callback=initMap");
+        window.initMap = this.initMap;
     }
 
     initMap = () => {
