@@ -66,7 +66,7 @@ class CustomMarker extends React.PureComponent {
             }
 
             {
-                this.state.savedInfo.evses.map((ev, key) => <div>
+                this.state.savedInfo.evses.map((ev, key) => <div key={key}>
                     EvCharger #{key + 1} {this.getStatusText(ev.status)}
                 </div>)
             }
