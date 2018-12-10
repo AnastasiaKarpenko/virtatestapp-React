@@ -6,6 +6,7 @@ In this project I used :
 - React.js, 
 - react-google-maps, 
 - Webstorm as IDE, 
+- axios for networking,
 - Virta API for data
 
 "containers" folder has:
